@@ -4,9 +4,9 @@ html,body{
     color: #222;
     font-size: 1em;
     width:100%;
+    margin: 0;
 }
 .header {
-    border:1px solid black;
     max-width: 1280px;
     height: 450px;
     background: url("img/Layer-header.png") center no-repeat;
@@ -24,19 +24,20 @@ html,body{
 
 .contain-header-nav {
     max-width:1280px;
-    height: 72px;
+    height: 74px;
     background: white;
 }
 .logo-block {
     display: inline-block;
     float:left;
-    background: url("img/Logo-header.png") 60% no-repeat;
-    height: 72px;
+    background: url("img/Logo-header.png") 65% no-repeat;
+    height: 74px;
     width: 30%;
 }
 .menu-block{
     width: 40%;
     float: left;
+    text-align: center;
 }
 .menu-block ul {
     box-sizing: border-box;
@@ -47,7 +48,7 @@ html,body{
 }
 .menu-block ul li {
     display:inline-block;
-    line-height: 72px;
+    line-height: 74px;
 }
 .menu-block ul li a {
     display:block;
@@ -78,8 +79,8 @@ html,body{
 }
 .search-button-img {
     background:url("img/seach.png") center no-repeat ;
-    width: 72px;
-    height: 72px;
+    width: 74px;
+    height: 74px;
     display: block;
     outline: none;
     border: none;
@@ -87,11 +88,12 @@ html,body{
 }
 .login-button {
     float: right;
-    background: url("img/chel.png") 15% no-repeat;
-    width: calc(100% - 72px);
+    background: url("img/chel.png") 13% no-repeat;
+    width: calc(100% - 74px);
     background-color: rgb(233, 78, 56);
-    padding-left: 20%;
-    line-height: 72px;
+    padding-left: 17%;
+    font-size: 14px;
+    line-height: 74px;
     text-transform: uppercase;
     font-family: "Gotham Pro", sans-serif;
     color: #fff9fb;
@@ -103,21 +105,23 @@ html,body{
 .header-contant{
     width: 40%;
     margin: auto;
-    padding-top: 2%;
+    padding-top: 2.5%;
 }
 .header-contant > h1 {
     font-family: "Gotham Pro", sans-serif;
     color: #fff9fb;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 30px;
 }
 .header-search {
     display: flex;
     flex-flow: column nowrap;
+    padding: 0 4%;
 }
 .sausage1 {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 4.5%;
     font-size: 18px;
     font-family: "Gotham Pro", sans-serif;
     align-items:stretch;
@@ -125,14 +129,15 @@ html,body{
 .sausage-mini {
     border: 1px solid lightslategray;
     border-radius: 50px;
-    padding: 18px 20px 18px 30px;
+    padding: 18px 28px 14px 30px;
     font-size: 18px;
     font-family: "Gotham Pro", sans-serif;
     align-self:flex-end;
     flex-grow:1;
-    margin-right: 30px;
+    margin-right: 3%;
     min-width: 50%;
     box-sizing: border-box;
+    margin-top: 2%;
 }
 .sausage-mini:last-child {
     margin: 0;
@@ -151,7 +156,7 @@ html,body{
 .sausage2 {
     border: 1px solid lightslategray;
     border-radius: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 5.5%;
     font-size: 18px;
     font-family: "Gotham Pro", sans-serif;
 }
@@ -160,7 +165,7 @@ html,body{
     background-color: transparent;
     font-size: 18px;
     font-family: "Gotham Pro", sans-serif;
-    padding: 18px 20px 18px 30px;
+    padding: 18px 20px 17px 30px;
 }
 
 .sausage2-search::-webkit-input-placeholder {
@@ -169,10 +174,10 @@ html,body{
 
 .sausage3 {
     border-radius: 50px;
-    padding: 18px 10px 18px 10px;
+    padding: 22px 14px 18px 17px;
     font-size: 17px;
     font-family: "Gotham Pro", sans-serif;
-    width: 25%;
+    width: 23.5%;
     margin: auto;
     text-align: center;
     background-color: rgb(233, 78, 56);
@@ -196,11 +201,10 @@ html,body{
 }
 .filter-left {
     display:inline-block;
-    width: 32%;
+    width: 33%;
     height: 100%;
     text-align: right;
     float: left;
-    margin-right: 30px;
     box-sizing: border-box;
 }
 .filter-left ul {
@@ -213,15 +217,24 @@ html,body{
     line-height: 60px;
 }
 .filter-left ul li a {
-    font-size: 14px;
+    font-size: 12px;
     display: block;
-    padding-right: 15px;
+    margin-right: 2%;
     text-transform: uppercase;
     font-family:"Gotham Pro", sans-serif;
     cursor: pointer;
     color: rgb(150, 166, 167);
     font-weight: bold;
     text-align: right;
+}
+.filter-left ul li:last-child{
+    padding-right: 1.5%;
+}
+.filter-left ul li:nth-child(2) {
+     padding-right: 4%;
+ }
+.filter-left ul li:nth-child(1) {
+    padding-right: 6.5%;
 }
 .filter-left ul li a:hover {
     color: rgb(233, 78, 56);
@@ -236,10 +249,10 @@ html,body{
     width:31%;
     height: 100%;
     text-align: center;
-    padding:auto;
     justify-content: center;
     padding-top: 10px;
     float: left;
+    padding-left: 2.5%;
 }
 #filter-center-city {
     box-sizing: border-box;
@@ -266,14 +279,14 @@ html,body{
 }
 .filter-right{
     display: inline-block;
-    width: 32%;
-    text-align: left;
-    float:left;
-    padding: 5px 0;
+    float: left;
+    padding: 9px 0 0 15px;
+    width:30%;
 }
 .filter-right-word {
     font-family: "Gotham Pro", sans-serif;
-    line-height: 50px;
+    line-height: 40px;
+    font-size: 12px;
     float:left;
     text-transform: uppercase;
 
@@ -284,19 +297,21 @@ html,body{
     padding: 0;
     margin: 0;
     float: left;
-    line-height: 30px;
+    width: 80%;
+    font-size: 0;
 }
 .filter-right ul li {
     display: inline-block;
-    padding-left: 5px;
+    padding-left: 3%;
+    box-sizing: border-box;
 }
 .filter_buttons {
     display: block;
     text-transform: uppercase;
     font-family: sans-serif;
     cursor: pointer;
-    height:50px;
-    width:50px;
+    height:40px;
+    width:40px;
     border-radius:50px;
 }
 .uno {
@@ -358,7 +373,7 @@ label > #cinco {
 
 /*Контент*/
 .content {
-    min-width: 1280px;
+    width: 1280px;
     margin: auto;
     background-color: #f3f1f2;
     display:flex;
@@ -369,20 +384,20 @@ label > #cinco {
     display:flex;
     margin: auto;
     max-width: 940px;
-    padding-top: 30px;
+    padding-top: 2%;
     justify-content: space-around;
     flex-flow: row nowrap;
 }
 .contant-contain:first-child {
-    padding-top: 50px;
+    padding-top: 3.5%;
 }
 /* Короткий блок */
 .content-block-short {
     flex-grow: 1;
     text-align: center;
-    margin-right: 30px;
+    margin-right: 3.5%;
     background-color: white;
-    min-width: 22.7%;
+    min-width: 22.5%;
     box-sizing: border-box;
 }
 .home1 {
@@ -410,21 +425,21 @@ label > #cinco {
     background-color: transparent;
 }
 .price {
-    padding: 5px 10px;
     background-color:rgb(22, 142, 75);
     color:white;
     border-radius: 30px;
     display: inline-block;
-    margin-left: 65%;
-    margin-top: 3%;
-    font-size: 14px;
-
+    margin-left: 62%;
+    margin-top: 3.5%;
+    font-size: 12px;
+    font-family: "Gotham", sans-serif;
+    padding: 3% 6% 2.5% 6%;
 }
 .circle-uno {
     display: inline-block;
     width: 58px;
     height: 58px;
-    margin-top: -35px;
+    margin-top: -32px;
     border: 4px solid white;
     border-radius: 50px;
     background: url("img/dig-home.png") center no-repeat;
@@ -438,7 +453,7 @@ label > #cinco {
     margin-top: -35px;
     border: 4px solid white;
     border-radius: 50px;
-    background: url("img/big-home.png");
+    background: url("img/muzik-cart.png") center no-repeat;
     background-color: rgb(219, 144, 28);
     z-index: 2;
 }
@@ -449,7 +464,7 @@ label > #cinco {
     margin-top: -35px;
     border: 4px solid white;
     border-radius: 50px;
-    background: url("img/big-home.png");
+    background: url("img/trans-cart.png")center no-repeat;
     background-color: rgb(136, 73, 156);
     z-index: 2;
 }
@@ -468,6 +483,8 @@ label > #cinco {
     text-transform: uppercase;
     padding: 20px 10px 15px 10px;
     color:rgb(22, 142, 75);
+    font-size: 12px;
+    font-family: "Gotham", sans-serif;
 }
 .short-block-info {
     font-family:"Gotham Pro", sans-serif;
@@ -476,7 +493,6 @@ label > #cinco {
     padding: 0 10px;
 }
 .short-block-info > span {
-    padding: 5px;
     height: 25px;
     display: block;
 }
@@ -489,7 +505,6 @@ label > #cinco {
     flex-grow: 1;
     margin-right: 30px;
     background-color: white;
-    min-width: 47%;
     flex-flow: row wrap;
     box-sizing: border-box;
 }
@@ -498,7 +513,7 @@ label > #cinco {
 }
 .long-block-img {
     border-bottom: 4px solid rgb(22, 142, 75);
-    padding-top: 16%;
+    padding-top: 18%;
 }
 .party-long {
     background: url("img/party-long.png") no-repeat;
@@ -528,7 +543,7 @@ label > #cinco {
 
 }
 .left {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 .comment-text {
     float: left;
@@ -538,12 +553,21 @@ label > #cinco {
     padding-top: 0;
     font-family: "Gotham Pro", sans-serif;
     font-size: 14px;
+    margin-top: -6%;
 
+}
+.big-stars {
+    background: url("img/big-polstars.png") left no-repeat;
+    height: 14px;
+    padding-top: -1%;
+    padding-bottom: 6.5%;
 }
 .comment-text > span {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
+    font-size: 16px;
+
 }
 .read-more {
     white-space: nowrap;
@@ -557,13 +581,13 @@ label > #cinco {
     display: inline-block;
 }
 .long-block-img >.evaluation {
-    margin-left: 20%;
-    font-weight: bold;
+    margin-left: 21%;
     color: white;
     vertical-align: bottom;
     padding: 0;
-    margin-top: 20px;
-    font-size: 16px;
+    margin-top: 2.5%;
+    font-size: 18px;
+    font-family: "Gotham Pro", sans-serif;
 }
 .contant-footer {
     text-align: center;
@@ -579,21 +603,25 @@ label > #cinco {
     margin: auto;
     font-size: 18px;
     font-family: "Gotham Pro", sans-serif;
-    border-bottom:3px solid rgba(150, 166, 167, 0.38);
-    margin-top: 3%;
-    margin-bottom: 3%;
+    border-bottom:1px solid rgba(150, 166, 167, 0.38);
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
     cursor: pointer;
+    font-weight: bold;
 }
 
 /*content-footer*/
 .contant-footer-quest {
-    font-size: 14px;
-    margin-top: 13%;
-    margin-bottom: 10%;
+    font-size: 11px;
+    margin-top: 11%;
+    margin-bottom: 9%;
+    font-family: "Gotham Pro", sans-serif;
 }
 .contant-footer-quest > h2 {
     color: rgba(150, 166, 167, 0.38);
-    margin-top: 0;
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-weight: lighter;
 
 }
 .contant-footer-quest > h1 {
@@ -601,7 +629,7 @@ label > #cinco {
     color: rgb( 86, 99, 117 );
 }
 .circle-menu {
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
 .footer-circle {
     display:inline-block;
@@ -632,7 +660,7 @@ label > #cinco {
     font-size: 24px;
     font-weight: bold;
     color: rgb(22, 142, 75) ;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
 .circle-word {
     border-radius: 50%;
@@ -657,7 +685,7 @@ label > #cinco {
      text-align: left;
      font-family: "Gotham Pro", sans-serif;
      color: rgb( 86, 99, 117 );
-     line-height: 1.5;
+     line-height: 1.7;
      padding-left: 10%;
      margin-right: 1%;
  }
@@ -669,11 +697,11 @@ label > #cinco {
     text-align: left;
     font-family: "Gotham Pro", sans-serif;
     color: rgb( 86, 99, 117 );
-    line-height: 1.5;
+    line-height: 1.7;
+    padding-left: 1%;
 }
 .block-text {
     margin-left: 25%;
-    max-width: 250px;
 }
 
 .uno1 {
